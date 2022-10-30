@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="conteiner">
+        <div class="difuminado">
+            <div class="iconos">
+                <div class="logo">
+                    <a href="http://argentinaprograma.inti.gob.ar/" target="_blank"><img src="../../../assets/APLogo.png" alt="argentinaprograma" class="logo"></a>
+                </div>
+                <div class="redes">
+                    <a href="https://instagram.com"  target="_blank" class="menu"><img src="../../../assets/instagram.png" alt="instagram" class="logos"></a>
+                    <a href="https://linkedin.com"  target="_blank" class="menu"><img src="../../../assets/linkedin.png" alt="linkedin" class="logos"></a>
+                    <a href="https://github.com"  target="_blank" class="menu"><img src="../../../assets/github.png" alt="github" class="logos"></a>
+                    <a href="https://twitter.com"  target="_blank" class="menu"><img src="../../../assets/twitter.png" alt="twitter" class="logos"></a>
+                    <a href="https://facebook.com"  target="_blank" class="menu"><img src="../../../assets/facebook.png" alt="facebook" class="logos"></a>
+                    <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                    <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+                </div>
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: grey;"></path></svg></div>
+        </div>
+    </div>
+</div>

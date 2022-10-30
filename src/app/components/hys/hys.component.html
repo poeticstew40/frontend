@@ -1,0 +1,45 @@
+<div class="row">
+    <h1>Hard & Soft Skills</h1>
+    <div class="col-lg-2">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+
+    <div class="text-center col-sm-4 col-md-4 col-lg4 circulo" *ngFor="let skill of skill">
+        <circle-progress
+            [percent]= "(skill.porcentaje)"
+            [title]= "(skill.nombre)"
+            [backgroundOpacity]= "1"
+            [backgroundPadding]= "7"
+            [radius]= "100"
+            [space]= "-2"
+            [toFixed]= "0"
+            [unitsColor]= "'#81c782'"
+            [outerStrokeGradient]= "true"
+            [outerStrokeWidth]= "2"
+            [outerStrokeColor]="'#0f990f'"
+            [outerStrokeGradientStopColor]= "'#000000'"
+            [innerStrokeColor]= "'#d9d9d9'"
+            [innerStrokeWidth]= "2"
+            [titleColor]= "'#81c782'"
+            [titleFontSize]= "'3em'"
+            [subtitleFontSize]= "'20'"
+            [animateTitle]= "false"
+            [animationDuration]= "600"
+            [showSubtitle]= "false"
+            [showUnits]= "false"
+            [clockwise]= "false"
+            [responsive]= "false"
+            [showInnerStroke]= "false"
+        ></circle-progress>
+        <div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-outline-primary" routerLink="/editskill/{{skill.id}}">
+                    <i class="bi bi-pencil"></i> EDITAR</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-outline-danger" (click)="delete(skill.id)">
+                    <i class="bi bi-trash"></i> BORRAR</button>
+            </td>
+        </div>
+    </div>
+</div>
