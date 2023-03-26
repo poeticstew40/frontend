@@ -9,7 +9,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://bkndng.herokuapp.com/skill/';
+  URL = 'https://backendng.onrender.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 

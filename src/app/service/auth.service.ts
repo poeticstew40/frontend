@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = 'https://bkndng.herokuapp.com/auth/';
+  URL = 'https://backendng.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

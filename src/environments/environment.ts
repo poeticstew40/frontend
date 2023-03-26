@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  URL: 'https://bkndng.herokuapp.com/'
+  URL: 'https://backendng.onrender.com/'
 };
 
 /*
